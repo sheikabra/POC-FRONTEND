@@ -15,7 +15,7 @@ form.addEventListener('submit',function (e){
     console.log(eml)
     console.log(pswd)
     let data = {
-        fistName:fname,
+        firstName:fname,
         lastName:lname,
         email:eml,
         password: pswd,

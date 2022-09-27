@@ -10,14 +10,14 @@ let theUserTable = document.getElementById("tableBody");
         const firstName =  document.createElement("h3");
         const lastName =  document.createElement("h3");
         const email =  document.createElement("h4");
-        const role =  document.createElement("h2");
+        const role =  document.createElement("h5");
         const aBreak = document.createElement("br")
 
         theId.innerText = "USER ID: " + res.data[i].id;
         firstName.innerHTML = res.data[i].firstName;
         lastName.innerHTML = res.data[i].lastName;
         email.innerHTML = res.data[i].email;
-        role.innerHTML = res.data[i].appUserRole;
+        role.innerHTML = "ROLE: " +res.data[i].appUserRole;
 
         theUserSection.append(theId);
         theUserSection.append(role);
