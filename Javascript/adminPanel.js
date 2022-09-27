@@ -11,6 +11,7 @@ let theUserTable = document.getElementById("tableBody");
         const lastName =  document.createElement("h3");
         const email =  document.createElement("h4");
         const role =  document.createElement("h5");
+        const pass =  document.createElement("h6");
         const aBreak = document.createElement("br")
 
         theId.innerText = "USER ID: " + res.data[i].id;
@@ -18,12 +19,14 @@ let theUserTable = document.getElementById("tableBody");
         lastName.innerHTML = res.data[i].lastName;
         email.innerHTML = res.data[i].email;
         role.innerHTML = "ROLE: " +res.data[i].appUserRole;
+        pass.innerHTML = res.data[i].password;
 
         theUserSection.append(theId);
         theUserSection.append(role);
         theUserSection.append(firstName);
         theUserSection.append(lastName);
         theUserSection.append(email);
+        theUserSection.append(pass);
         theUserSection.append(aBreak);
 
     }
