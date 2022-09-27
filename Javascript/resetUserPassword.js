@@ -23,6 +23,6 @@ form.addEventListener('submit',function (e){
         },
         body: JSON.stringify(data),
 
-    })
+    }).then(r=>(alert("Updated Password for user: " + eml)))
 
 })
