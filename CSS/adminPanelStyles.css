@@ -1,7 +1,11 @@
 body{
-    background-color: #eaeaea;
+    background-color: #fafafa;
 }
 
 #userSection{
+margin-left: 60px;
+}
 
+h3{
+    color: #0059ff;
 }

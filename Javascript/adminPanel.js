@@ -7,16 +7,20 @@ let theUserTable = document.getElementById("tableBody");
     for (let i = 0; i < res.data.length; i++) {
 
         const theId = document.createElement('h2');
-        const firstName =  document.createElement("h2");
-        const lastName =  document.createElement("h2");
-        const email =  document.createElement("h2");
+        const firstName =  document.createElement("h3");
+        const lastName =  document.createElement("h3");
+        const email =  document.createElement("h4");
+        const role =  document.createElement("h2");
         const aBreak = document.createElement("br")
+
         theId.innerText = "USER ID: " + res.data[i].id;
         firstName.innerHTML = res.data[i].firstName;
         lastName.innerHTML = res.data[i].lastName;
         email.innerHTML = res.data[i].email;
+        role.innerHTML = res.data[i].appUserRole;
 
         theUserSection.append(theId);
+        theUserSection.append(role);
         theUserSection.append(firstName);
         theUserSection.append(lastName);
         theUserSection.append(email);
