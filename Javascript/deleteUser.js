@@ -4,7 +4,7 @@ function deletetheuser(){
     console.log(id + " Was Deleted")
    fetch('http://localhost:8080/removeuser?id=' + id, {
        method: 'DELETE'
-   }).then(r  =>(console.log(id + " was deleted")))
+   }).then(r  =>(alert(id + " was deleted")))
 }
 
 
